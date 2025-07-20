@@ -36,6 +36,18 @@ body{
   background-color: #e0e0e0;
 }
 
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .fade-out {
   animation: fadeOut 1s ease forwards;
@@ -50,7 +62,6 @@ body{
     pointer-events: none; /* 클릭 방지 */
   }
 }
-
 
 .hidden{
     display: none;
