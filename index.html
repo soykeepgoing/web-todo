@@ -7,37 +7,20 @@
     <title>WEB-ToDo</title>
 </head>
 <body>
-    <form class = "hidden" id = "login-form"> 
-        <input 
-            required
-            maxlength="15"
-            type = "text" 
-            placeholder= "What is your name?" 
-        />
-        <button> Log In </button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 class = "hidden" id="greeting"></h1>
-    <form id = "todo-form">
-        <input type = "text" placeholder = "Write a To Do" required />
-    </form>
-    <ul id = "todo-list">
-    </ul>
-    <div id = "quote">
-        <span></span>
-        <span></span>
+
+    <div class = "hidden welcome-container" id = "welcome-container">
+        <div class = "welcome-text">Welcome, </div>
+        <form class = "welcome-form" id = "welcome-form">
+            <input
+                required
+                maxlength="15"
+                type = "text"
+                placeholder="name"
+            />
+        </form> 
     </div>
-    <div id = "weather">
-        <span></span>
-        <span></span>
-    </div>
-    <script src = "js/api_key.js"></script>
+
+    <!-- 자바스크립트 추가 -->
     <script src="js/greetings.js"> </script>
-    <script src = "js/clock.js"> </script>
-    <script src = "js/quotes.js"> </script>
-    <script src = "js/background.js"></script>
-    <script src = "js/todo.js"></script>
-    <script src = "js/weather.js"></script>
-    
 </body>
 </html>

@@ -1,3 +1,57 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbeefc;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.welcome-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-text{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.welcome-form input {
+  width: 250px;
+  height: 60px;
+  font-size: 16px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #eeeeee;
+  box-sizing: border-box;
+}
+
+.welcome-form input:focus {
+  outline: none;
+  background-color: #e0e0e0;
+}
+
+
+.fade-out {
+  animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    pointer-events: none; /* 클릭 방지 */
+  }
+}
+
+
 .hidden{
     display: none;
 }

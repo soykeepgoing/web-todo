@@ -1,30 +1,26 @@
-const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#login-form input");
-const greeting = document.querySelector("#greeting");
-
+const USERNAME_KEY = "userName";
 const HIDDEN_CLASSNAME = "hidden";
-const USERNAME_KEY  = 'username';
+const FADE_OUT_CLASSNAME = "fade-out";
 
-function onLoginSubmit(event) {
-    event.preventDefault(); // 브라우저 기본 동작 제어
-    loginForm.classList.add(HIDDEN_CLASSNAME);
-    const username = loginInput.value;
-    localStorage.setItem(USERNAME_KEY, username);
-    paintGreetings(username);
-}
-
-function paintGreetings(username){
-    greeting.innerText = `Hello ${username}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
-}
+const welcomeContainer = document.querySelector("#welcome-container");
+const welcomeForm = document.querySelector("#welcome-form");
+const welcomeInput = document.querySelector("#welcome-form input");
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
-if (savedUsername === null) {
-    // show the form
-    loginForm.classList.remove(HIDDEN_CLASSNAME);
-    loginForm.addEventListener("submit", onLoginSubmit);
-} else {
-    // show the greetings 
-    paintGreetings(savedUsername);
+function onNameSubmit(event){
+    event.preventDefault(); // 기본 동작 방지 
+    const userName = welcomeInput.value;
+    localStorage.setItem(USERNAME_KEY, userName); // DB에 저장
+    welcomeContainer.classList.add(FADE_OUT_CLASSNAME); // 페이드아웃 클래스 적용
+}
+
+if (savedUsername === null){
+    // 저장된 사용자 이름이 없는 경우 => 시작 페이지 
+    welcomeContainer.classList.remove(HIDDEN_CLASSNAME)
+    welcomeForm.addEventListener("submit", onNameSubmit);
+
+} else{
+    // 기본 페이지 
+    
 }
