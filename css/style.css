@@ -43,6 +43,28 @@ body{
   top: 0px;
 }
 
+.weather{
+  position: fixed;
+  left: 20px;
+  top: 50px;
+  font-size: 20px;
+}
+.weather-condition-thunderstorm { color: aqua; }
+.weather-condition-drizzle      { color: dodgerblue; }
+.weather-condition-rain         { color: blue; }
+.weather-condition-snow         { color: snow; }
+.weather-condition-mist         { color: bisque; }
+.weather-condition-smoke        { color: dimgray; }
+.weather-condition-haze         { color: lightgray; }
+.weather-condition-dust         { color: peru; }
+.weather-condition-fog          { color: darkgrey; }
+.weather-condition-sand         { color: goldenrod; }
+.weather-condition-ash          { color: lightslategrey; }
+.weather-condition-squall       { color: steelblue; }
+.weather-condition-tornado      { color: crimson; }
+.weather-condition-clear        { color: yellow; }
+.weather-condition-clouds       { color: cornflowerblue; }
+
 .fade-in {
   animation: fadeIn 1s ease forwards;
 }
