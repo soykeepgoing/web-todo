@@ -37,6 +37,13 @@ body{
   font-size: 30px;
 }
 
+.todo-list{
+  position: absolute;
+  top: 10vh;
+  left: 50vw;
+  font-size: 20px;
+}
+
 
 .welcome-container{
     display: flex;
