@@ -16,7 +16,7 @@ body{
   position: relative;
 }
 
-.todo-info {
+.todo-title {
   position: absolute;   /* 부모를 기준으로 위치 이동 가능 */
   top: 15vh;
   left: 3vw;
