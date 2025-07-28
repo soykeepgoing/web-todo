@@ -25,6 +25,19 @@ body{
   font-weight: bold;
 }
 
+.todo-form {
+  position: absolute;
+  top: 30vh;
+  left: 3vw;
+  
+}
+
+.todo-input{
+  position:fixed;
+  font-size: 30px;
+}
+
+
 .welcome-container{
     display: flex;
     align-items: center;
