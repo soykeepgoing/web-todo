@@ -10,4 +10,4 @@
 
 # 주요 기능 
 
-comming soon!
+coming soon!
