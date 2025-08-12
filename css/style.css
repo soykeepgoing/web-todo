@@ -9,27 +9,19 @@ body{
 }
 
 .todo-container {
-  width: 90vw;      /* 브라우저 가로폭의 80% */
-  height: 80vh;     /* 브라우저 세로높이의 60% */
+  width: 90%;
+  height: 80%;
   background-color: #c393d6;
   border-radius: 15px;
   position: relative;
+  padding: 3%;
 }
 
 .todo-title {
-  position: absolute;   /* 부모를 기준으로 위치 이동 가능 */
-  top: 15vh;
-  left: 3vw;
   color: white;
-  font-size: 60px;
+  font-size: 5vw;
   font-weight: bold;
-}
-
-.todo-form {
-  position: absolute;
-  top: 30vh;
-  left: 3vw;
-  
+  margin-bottom: 2%; /* 아래 여백 */
 }
 
 .todo-input{
